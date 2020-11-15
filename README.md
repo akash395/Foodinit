@@ -1,4 +1,4 @@
-# restaurant
+# Online Restaurant
  Online restaurnat Project 322
  Phase II Task
    Design Report
