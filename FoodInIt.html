@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FoodInIt</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+    <body>
+    
+<!--Navigation bar = List of Links-->
+<!--Navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense.-->
+        
+        
+<!--IDs are more specific and allows us to interact with elements on a page with java scripts-->
+        <nav>
+            <ul class="topnav " id="dropdownClick">
+            
+                <li><a href="#home">Home</a></li>
+                <li><a href="#News">MENU</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li class="topnav-right"><a href="#Sign Up">Sign Up</a></li>
+                <li class="topnav-right"><a href="#Sign In">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);"  onclick="dropdownMenu()" >&#9776;</a></li>
+                <!--&#9776; this is a trigram code from the google its a 3 line bar in the top corner.-->
+            </ul>
+        
+        </nav>
+        <div class="container" id="section-1-gradient">
+            <h1 class="justheading">FoodInIt</h1>
+        <div class ="row">
+        <div class="col-6">
+            <div class="leftside-col">
+                <h1 class="large">Easy Access</h1>
+                <h1 class="large">Made for Food lovers</h1>
+                
+            </div>
+            <button class = " bt1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in</button>
+            <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="#" method="post">
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+           <!--<form>
+               <div class="userInfo">
+                   <h2>Username</h2>
+                   <input class="inputbox" type="text" placeholder="Username">
+                   <h2>Password</h2><input class="inputbox" type="text" placeholder="Password">
+            </div>
+     </form>-->
+            
+            </div>
+         <div class="col-6">
+            <div class="videoMargin">
+                <div  class="videoContainer"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rzNXJ9w_Zhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+            </div>
+            </div>
+            
+        </div>
+        
+</div>
+        
+        <header>
+         <h1 class="section2Header">The standard Menu</h1>
+        </header>
+        
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <level>Drinks</level>
+                      <table> 
+                          <tr>
+                           <div class="icon">
+                             
+                             <th> <img src="https://scx2.b-cdn.net/gfx/news/hires/2017/ismixingdrin.jpg" width="150" height="130"></th>
+                            </div>
+                              <th><ul class="listColor">
+                                 <li> Mango Lacci</li>
+                                 <li> Thai Iced Tea</li>
+                                 <li> Pina Collata</li>
+                                 <li> Strawberry Smoothie</li>
+                                 <li> Pineapple Lemonade</li>
+                                 <li> Caramel Latte</li>
+                               </ul></th>
+                        </tr>
+                            </table>
+                        
+                    
+                    </div>
+                  
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <level>Meals</level>
+                      <table> 
+                          <tr>
+                           <div class="icon">
+                             
+                             <th> <img src="https://previews.123rf.com/images/sergeypykhonin/sergeypykhonin1604/sergeypykhonin160400034/55349020-restaurant-diner-vector-logo-dish-meal-food-or-chef-icon.jpg" width="150" height="130"></th>
+                            </div>
+                              <th><ul class="listColor">
+                                 <li> Spring Rolls</li>
+                                 <li> Thai Dumplings</li>
+                                 <li> Pineapple Fried Rice</li>
+                                 <li> Pad See Ew</li>
+                                 <li> Basil Fried Rice</li>
+                                 <li> Sriacha Fried Rice</li>
+                               </ul></th>
+                        </tr>
+                            </table>
+                        
+                    
+                    </div>
+                  
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <level>Dessert</level>
+                      <table> 
+                          <tr>
+                           <div class="icon">
+                             
+                             <th> <img src="https://comps.canstockphoto.com/coffee-icons-clipart-vector_csp11752151.jpg" width="150" height="130"></th>
+                            </div>
+                              <th><ul class="listColor">
+                                 <li> Ultimate Gooey Brownies</li>
+                                 <li> Mint Oreo Cake</li>
+                                 <li> Chocolate And Strawberry Cake</li>
+                                 <li> Meyer Lemon Bars</li>
+                                 <li> Pomegranate Mousse Cake</li>
+                                 <li> Banana Pudding Parfaits</li>
+                               </ul></th>
+                        </tr>
+                            </table>
+                    </div>
+                  
+                </div>
+          </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnmore">LEARN MORE</button>
+                
+                </div>
+            
+            
+            </div>
+        
+     </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+            
+            <div class="col-7">
+                <!-- html semantic called article... the types of info that we should be puting in there is anything like a blog post or a comment or like a news article things like that  -->
+             <article> 
+                 <p>Nothing will annoy your audiences more than to see the same old ideas rehashed by so many brands! Switching your ad up with novel images can be refreshing in the eyes of your diners. They say a picture speaks a thousand words, and perhaps it’s true! 55% of audiences actually recall content more when images are included.Today, the attention of consumers lasts for only about 8 seconds. So it will be smart for you to tell your restaurant’s story by exploring with images. Visual storytelling involves showing, rather than telling. But there’s just one small problem – not all of us are as creative as we wish we were. And not all of us are born master storytellers either. </p>
+
+                
+             </article>
+            </div>
+            <div class="col-5">
+                    <div class="restaurantImg">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width="300" height="250">
+                
+                
+                    </div>
+            
+            </div>
+        
+        </div>
+    </div>
+        <footer class="footerclass">
+            <div class="row">
+            <div class="col-3 mobileStack">
+                <h1>FoodInIt</h1>
+                <ul>
+                    <li>Company</li>
+                    <li>Careers</li>
+                    <li>Company</li>
+                 </ul>
+              </div>
+                <div class="col-3 mobileStack">
+                <h1>Websites</h1>
+                <ul>
+                    <li>Overview</li>
+                    <li>Design</li>
+                    <li>Dashboard</li>
+                 </ul>
+              </div>
+                <div class="col-3 mobileStack">
+                <h1>Customers</h1>
+                <ul>
+                    <li>Fine Dining</li>
+                    <li>Fast Causal </li>
+                    <li>Reservation</li>
+                 </ul>
+              </div>
+                <div class="col-3 mobileStack">
+                <h1>Contact</h1>
+                <ul>
+                    <li>Phone number</li>
+                    <li>Email</li>
+                    <li>Fax-Number</li>
+                 </ul>
+              </div>
+           
+            
+            </div>
+      
+            
+            
+         <hr>
+        
+        
+        </footer>
+        
+     
+        
+       <!--embaded javascript to add an action to our drop down icon when it is clicked-->
+        
+        <script>
+            
+        //Onclick in line 24 use so that javascript function can work 
+            // to store our ID in this var we gonna use the keyword called document. this will allows us to access to html page and another element call getelementById which allows us to grab out id
+        function dropdownMenu(){
+         var x =  document.getElementById("dropdownClick");
+             if(x.className === "topnav"){
+                 x.className += " responsive";
+                 /*change topnav to topnav.responsive*/
+             }else {
+                 x.className==="topnav";
+             }
+                
+        }
+    </script>
+        
+        
+        
+        
+        
+    </body>
+
+
+</html>
