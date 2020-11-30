@@ -1,0 +1,80 @@
+nav{
+    width: 100%;
+    margin: 0%
+  
+  }
+  
+  
+  nav ul{
+  
+    background-color: #eee;
+    /*Overflow means when the browser is collapsing any of th elements that might be too big to fit in the screen by setting it to overflow hidden.   */
+    overflow: hidden;
+    margin: 0;/*    making it to 0 it remove the bullet point from the list and make it to edge to edge*/
+    padding: 0;/*    padding: 0;*/
+  }
+  
+  ul.topnav li{
+  /*below line will move the bullet points*/
+    list-style: none;
+  /*Float will move all the listed element and put  them to the position left from vertical to horizontal position*/
+     float:left;
+    
+  }
+  ul.topnav li.topnav-right {
+    float: right;
+  }
+  ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+  /*min-height could also work for font size. they both work same. */
+    text-align: center;
+    padding: 14px;
+    text-transform:uppercase;
+  /*Text-transform can change the text to either all upercase or lowercase*/
+    color: #666;
+    
+  }
+  ul.topnav li a:hover{
+    background-color: #0080ff;
+  /*This will bring a blue color hover where the cursur will be */
+  }
+  ul.topnav li.dropdownIcon{
+    display: none;
+  }
+  
+  @media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+  /* line 68 is saying once we shrink the window and size of mobile it will display nth accept the num 1 child which is home*/
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+    display: block;
+    float:right; 
+  
+  /*when u put display of block it makes it a lot easier to positions   */
+        
+   }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+  /*the reason position = relative is becz when we hit that button we wanna be sure that nav bar isnt gonna move on  */
+        
+    }
+    ul.topnav.responsive li{
+        display: inline;
+  /*reason the display is inline sot hat all these list items are grouped together and basicall what is doing is lining all of them up  */
+        float: none;
+  /*Because initially float being set to left in the topnav class*/
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left; 
+        
+    }
+  }
