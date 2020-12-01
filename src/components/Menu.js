@@ -1,14 +1,22 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
+import Sidebar from './Sidebar'
 
-function Menu() {
-    return (
-        <div>
-         <div >
-            <h1>MENU</h1>
-        </div>
-        </div>
-    )
+import './../App.css'
+import './../Sidebar.css'
+
+
+class Menu extends Component {
+    constructor (){
+        super ();
+    }
+
+    render() {
+        return (
+            <div className = "Menu" id = "outer-container">
+                <Sidebar pageWrapId = {'page-wrap'} outerContainerId={'outer-container'} />
+            </div>
+        )
+    }
 }
 
 export default Menu

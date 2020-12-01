@@ -10,7 +10,7 @@ function NavBar() {
                    <li><a href="#home">Home</a></li>
                 </Link>
                 <Link to = "/menu">
-                    <li><a href="#Menu">MENU</a></li>
+                    <li><a href="/Menu">MENU</a></li>
                 </Link>
                 <Link to = "/about">
                  <li><a href="#About">About</a></li>
