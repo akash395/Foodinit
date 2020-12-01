@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { Component } from "react";
 import {Link} from 'react-router-dom'
 
-function Home() {
-    return (
-        <div>
-            <h3>This is home page</h3>
-        </div>
-    )
-}
 
-export default Home
+
+export default class Home extends Component {
+    render() {
+        return (
+
+            <div> 
+           <div className="container" id="section-1-gradient">
+                 <h1 className="justheading">FoodInIt</h1>
+                   <div className ="row">
+                        <div className="col-6">
+                            <div className="leftside-col">
+                                <h1 className="large">Easy Access</h1>
+                                <h1 className="large">Made for Food lovers</h1>
+                
+                        </div>
+                    </div>
+               </div>
+               <div className="col-6">
+            <div className="videoMargin">
+                <div  className="videoContainer"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rzNXJ9w_Zhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+            </div>
+            </div>
+          </div>
+          
+         </div>  
+         
+
+        );
+    }
+}
