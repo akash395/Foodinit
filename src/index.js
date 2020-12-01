@@ -5,14 +5,45 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import NavBar from'./components/NavBar'
 import Home from './components/Home'
+import About from'./components/About'
+import Menu from'./components/Menu'
+import ContactUs from'./components/ContactUs'
+import SignUp from'./components/SignUp'
+import SignIn from'./components/SignIn'
+
+
+
 
 ReactDOM.render (
   <Router>
-    <Route path = '/' component = {NavBar} />
-    
+    <NavBar />
+
+
     <Switch>
       <Route path = '/home' component = {Home} /> 
     </Switch>
+
+    <Switch>
+      <Route path = '/menu' component = {Menu} />
+    </Switch>
+
+    <Switch>
+      <Route path = '/about' component = {About} />
+    </Switch>
+
+    <Switch>
+      <Route path = '/signin' component = {SignIn} />
+    </Switch>
+
+    <Switch>
+      <Route path = '/signup' component = {SignUp} />
+    </Switch>
+
+    <Switch>
+      <Route path = '/contact' component = {ContactUs} />
+    </Switch>
+
+
   </Router>,
   document.getElementById ("root")
 )
