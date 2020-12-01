@@ -5,7 +5,7 @@ function Menu() {
     return (
         <div>
          <div >
-            <h1>MENU</h1>
+            <h1>Here is all the food shit for your stuff</h1>
         </div>
         </div>
     )
