@@ -2,14 +2,14 @@ import React from 'react'
 
 function SignIn() {
     return (
-       
-        <div>
-
-            <h1>Tomar login info kintu niye raksi so better use the site anyway</h1>
-        </div>
-  
-       
-        
+        <main className = "form">
+            <form type = "submit">
+                <input type = "text" placeholder = "Username" />
+                <br />
+                <br />
+                <input type = "text" placeholder = "Password" />
+            </form>
+        </main>
     )
 }
 
