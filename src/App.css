@@ -49,7 +49,7 @@ nav{
   }
   
   @media screen and (max-width:680px){
-    ul.topnav li:not(:nth-child(1)){
+    ul.topnav li:not(:nth-child(0)){
   /* line 68 is saying once we shrink the window and size of mobile it will display nth accept the num 1 child which is home*/
         display: none;
     }
@@ -93,4 +93,66 @@ nav{
   #page-wrap {
     padding-bottom: 10px;
     padding-top: 10px;
+  }
+
+
+
+
+  /* SignIn style*/
+  
+  h3.H3class{
+      text-align: center;
+      font-size: 50px;
+      font-family: serif;
+      font-weight: bold;
+  }
+  .Container1{
+    
+    text-align: center;
+    box-shadow: blue;
+    /* background-color: rgb(248, 159, 159); */
+    background: linear-gradient(rgb(189, 186, 204),rgb(6, 122, 113));
+    padding: 0%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+  .form-group{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .form-control{
+    border-radius: 0%;
+  }
+  .SubmitBtn{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 800;
+    border-radius: 0%;
+  }
+  .forgot-password{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia;
+   
+  }
+  .Container2{
+    
+    text-align: center;
+    box-shadow: blue;
+    /* background-color: rgb(248, 159, 159); */
+    background: linear-gradient(rgb(189, 186, 204),rgb(6, 122, 113));
+    padding: 0%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+  .SignUpBtn{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 800;
+    border-radius: 0%;
   }
