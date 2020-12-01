@@ -10,6 +10,7 @@ import Menu from'./components/Menu'
 import ContactUs from'./components/ContactUs'
 import SignUp from'./components/SignUp'
 import SignIn from'./components/SignIn'
+import Cart from'./components/Cart'
 
 
 
@@ -41,6 +42,10 @@ ReactDOM.render (
 
     <Switch>
       <Route path = '/contact' component = {ContactUs} />
+    </Switch>
+
+    <Switch>
+      <Route path = '/cart' component = {Cart} />
     </Switch>
 
 
