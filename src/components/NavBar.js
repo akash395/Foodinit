@@ -10,7 +10,7 @@ function NavBar() {
                    <li><a href="#home">Home</a></li>
                 </Link>
                 <Link to = "/menu">
-                    <li><a href="#Menu">MENU</a></li>
+                    <li><a href="/Menu">MENU</a></li>
                 </Link>
                 <Link to = "/about">
                  <li><a href="#About">About</a></li>
@@ -19,6 +19,9 @@ function NavBar() {
                      <li><a href="#Contact">Contact</a></li>
                 </Link>
                
+                <Link to = "/cart">
+                    <li className="topnav-right"><a href="/cart">Cart</a></li>
+                </Link>
                 <Link to = "/signup">
                     <li className="topnav-right"><a href="#Sign Up">Sign Up</a></li>
                 </Link>

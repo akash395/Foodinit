@@ -2,14 +2,14 @@ import React from 'react'
 
 function SignIn() {
     return (
-       
-        <div>
-
-            <h1>TOMAR MATHA</h1>
-        </div>
-  
-       
-        
+        <main className = "form">
+            <form type = "submit">
+                Username <input type = "text" placeholder = "Username" />
+                <br />
+                <br />
+                Password <input type = "text" placeholder = "Password" />
+            </form>
+        </main>
     )
 }
 
