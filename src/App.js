@@ -7,6 +7,7 @@ import SignIn from "./components/SignIn.component";
 import SignUp from "./components/SignUp.component";
 import Home from "./components/Home.component";
 
+
 function App() {
   return (<Router>
     <div className="App">
