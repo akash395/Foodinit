@@ -227,4 +227,12 @@ h1.large{
   align-items: center;
 }
 
-
+/* Appetizer pics styles */
+.AddtocartBtn{
+ margin-left: 7px;
+  margin-right: 120px;
+}
+.ratting{
+  margin-left:180px;
+}
+.col-4{width: 33.33%;}
