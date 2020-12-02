@@ -31,17 +31,7 @@ export default props => {
         </a>
       </Link>
       
-      <Link to = '/desserts'>
-        <a className="menu-item" href="/desserts">
-          Desserts
-        </a>
-      </Link>
       
-      <Link to = '/snacks'>
-        <a className="menu-item" href="/snacks">
-          Snacks
-        </a>
-      </Link>
       
       <Link to = "/beverages">
         <a className="menu-item" href="/beverages">
