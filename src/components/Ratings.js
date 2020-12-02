@@ -30,4 +30,3 @@ export class Ratings extends Component {
 }
 
 export default Ratings
-

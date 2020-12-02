@@ -3,14 +3,14 @@ import Ratings from './Ratings'
 
 function FoodProfile(props) {
     const imgStyle = {
-        position: 'relative',
-        left: '170px',
-        
-    }
-    const btnStyle = {
-        position: 'sticky',
+        position:'relative',
         left: '170px'
+        // up:'20px'
     }
+    // const btnStyle = {
+    //     position: 'sticky',
+    //     left: '170px'
+    // }
     return (
         <div>
             <img 
@@ -18,8 +18,13 @@ function FoodProfile(props) {
                 style = {imgStyle}
             />
             <p style = {imgStyle}> {props.name}  {props.price}</p>
-            <Ratings  style = {{marginLeft: '170px'}}/>
-            <button  >Add to cart</button>
+            <table>
+                <tr>
+                    <th><div className="ratting"> <Ratings/></div></th>
+                   <th><button className="AddtocartBtn" >Add to cart</button></th>
+            </tr>
+            
+            </table>
         </div>
     )
 }

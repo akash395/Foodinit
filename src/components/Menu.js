@@ -9,9 +9,7 @@ import Appetizer from './Appetizer'
 import Breakfast from './Breakfast'
 import Lunch from './Lunch'
 import Dinner from './Dinner'
-import Desserts from './Desserts'
 import Beverages from './Beverages'
-import Snacks from './Snacks'
 import Specials from './Specials'
 
 class Menu extends Component {
@@ -42,14 +40,6 @@ class Menu extends Component {
 
                     <Switch>
                         <Route path = '/beverages' component = {Beverages} />
-                    </Switch>
-
-                    <Switch>
-                        <Route path = '/desserts' component = {Desserts} />
-                    </Switch>
-
-                    <Switch>
-                        <Route path = '/snacks' component = {Snacks} />
                     </Switch>
 
                     <Switch>
