@@ -1,0 +1,231 @@
+@import '~antd/dist/antd.css';
+
+nav{
+    width: 100%;
+    margin: 0%;
+   
+  }
+  
+  
+  nav ul{
+  
+    background-color: bisque;
+    /*Overflow means when the browser is collapsing any of th elements that might be too big to fit in the screen by setting it to overflow hidden.   */
+    overflow: hidden;
+    margin: 0;/*    making it to 0 it remove the bullet point from the list and make it to edge to edge*/
+    padding: 0;/*    padding: 0;*/
+  }
+  
+  ul.topnav li{
+  /*below line will move the bullet points*/
+    list-style: none;
+  /*Float will move all the listed element and put  them to the position left from vertical to horizontal position*/
+     float:left;
+    
+  }
+  ul.topnav li.topnav-right {
+    float: right; 
+  }
+  ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+  /*min-height could also work for font size. they both work same. */
+    text-align: center;
+    padding: 14px;
+    text-transform:uppercase;
+  /*Text-transform can change the text to either all upercase or lowercase*/
+    color: rgb(8, 8, 8);
+   
+    font-family:serif;
+    
+  }
+  ul.topnav li a:hover{
+    background-color: #0080ff;
+  /*This will bring a blue color hover where the cursur will be */
+  }
+  ul.topnav li.dropdownIcon{
+    display: none;
+  }
+  
+  @media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(0)){
+  /* line 68 is saying once we shrink the window and size of mobile it will display nth accept the num 1 child which is home*/
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+    display: block;
+    float:right; 
+    margin: 0%;
+  
+  /*when u put display of block it makes it a lot easier to positions   */
+        
+   }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+  /*the reason position = relative is becz when we hit that button we wanna be sure that nav bar isnt gonna move on  */
+        
+    }
+    ul.topnav.responsive li{
+        display: inline;
+  /*reason the display is inline sot hat all these list items are grouped together and basicall what is doing is lining all of them up  */
+        float: none;
+  /*Because initially float being set to left in the topnav class*/
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left; 
+        
+    }
+    
+    .col-6
+    {
+        width:100%;
+        margin: 0;
+    }
+    .videoContainer iframe{
+      position: relative;   /*to keep something in its normal form we use relative*/
+      width: 80%;
+      margin:0;
+      overflow: hidden;
+      display:block;
+      
+
+  }
+  }
+
+  /* Side nav menu*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #page-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+
+
+
+  /* SignIn style*/
+  
+  h3.H3class{
+      text-align: center;
+      font-size: 50px;
+      font-family: serif;
+      font-weight: bold;
+  }
+  .Container1{
+    
+    text-align: center;
+    box-shadow: blue;
+    /* background-color: rgb(248, 159, 159); */
+    background: linear-gradient(rgb(189, 186, 204),rgb(6, 122, 113));
+    padding: 0%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+  .form-group{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+  }
+  .form-control{
+    border-radius: 0%;
+  }
+  .SubmitBtn{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 800;
+    border-radius: 0%;
+  }
+  .forgot-password{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia;
+   
+  }
+  .Container2{
+    
+    text-align: center;
+    box-shadow: blue;
+    /* background-color: rgb(248, 159, 159); */
+    background: linear-gradient(rgb(189, 186, 204),rgb(6, 122, 113));
+    padding: 0%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+  }
+  .SignUpBtn{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 800;
+    border-radius: 0%;
+
+  }
+  .container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+#section-1-gradient{
+  background: #076DFF; /*for browser that do not support gradients*/
+  background: -webkit-linear-gradient(black,red);/*for safari */
+  background: -o-linear-gradient(black,red);/*for Firefox*/
+  background: -moz-linear-gradient(black,red);
+  background: linear-gradient(black,red);/*standard syntax*/
+}
+h1.large{
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 70%;
+  font-family: serif;
+  padding:auto;
+
+  
+}
+.justheading{
+  font-family: serif;
+  font-size: 60px;
+  text-align: left;
+  border: 4 solid black;
+  color: aqua;
+  padding:10px;
+  display: block;
+  margin: 0; 
+}
+.videoMargin{
+  /* margin-left: 120%;
+  margin-bottom: px; */
+  margin-left: 60%;
+  margin-bottom: 5px;
+  
+}
+.col-6{width: 50%;}
+.row{
+  width: 100%;
+  display: flex;
+/*Flex: its going to be latch on to and grab any elements that we put inside of our row that has flex on it it can help those thing change size  */
+
+  /* After adding display to flex it allows us to add a few more spexial properties to that class*/
+  flex-wrap: wrap;
+/* Flex-wrap=wrap   all the element inside the row is flexing ang getting smaller so this flex-wrap will take the content and wrap it around underneath 
+  it will help shif our elemtnt around*/
+  
+  align-items: center;
+}
+
+
