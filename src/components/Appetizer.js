@@ -1,6 +1,6 @@
 import React from 'react'
 import FoodProfile from './FoodProfile'
-import  chicken_wings from './../images/chicken-wings.jfif'
+import chicken_wings from './../images/chicken-wings.jfif'
 import fries from './../images/fries.png'
 
 function Appetizer() {
