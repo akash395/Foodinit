@@ -12,7 +12,7 @@ import SignUp from'./components/SignUp'
 import SignIn from'./components/SignIn'
 import Cart from'./components/Cart'
 
-
+import Foo from './Foo'
 ReactDOM.render (
   <Router>
     <NavBar />

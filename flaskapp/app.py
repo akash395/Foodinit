@@ -1,4 +1,4 @@
-from flask import Flask, render_template , request
+from flask import Flask, render_template , request, redirect
 from flask_mysqldb import MySQL
 import yaml
 
@@ -17,7 +17,7 @@ app.config ['MYSQL_DB'] = db ['mysql_db']
 
 mysql = MySQL (app)
 
-@app.route ('/', methods = ["POST", "GET"])
+@app.route ('/post', methods = ["POST", "GET"])
 def home():
     if request.method == "POST":
         userInfo = request.form
@@ -30,8 +30,18 @@ def home():
         cur.execute ("INSERT INTO user (first_name, last_name, email, password) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, password))
         mysql.connection.commit ()
         cur.close ()
-        return 'success'
+        return redirect('http://localhost:3000')
     return render_template ('index.html')
+
+
+
+
+@app.route ('/user', methods = ["GET", "POST"])
+def user ():
+    return {
+        'message': 'ncconnected'
+    }
+
 
 
 if __name__ == '__main__':
