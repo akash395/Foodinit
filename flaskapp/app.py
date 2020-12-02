@@ -34,15 +34,5 @@ def home():
     return render_template ('index.html')
 
 
-
-
-@app.route ('/user', methods = ["GET", "POST"])
-def user ():
-    return {
-        'message': 'ncconnected'
-    }
-
-
-
 if __name__ == '__main__':
     app.run (host = 'localhost', port = 5000)
