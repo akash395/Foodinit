@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Sidebar from './Sidebar'
 
 import './../App.css'
 import './../Sidebar.css'
 
+import Appetizer from './Appetizer'
+import Breakfast from './Breakfast'
+import Lunch from './Lunch'
+import Dinner from './Dinner'
+import Desserts from './Desserts'
+import Beverages from './Beverages'
+import Snacks from './Snacks'
+import Specials from './Specials'
 
 class Menu extends Component {
     constructor (){
@@ -11,10 +20,43 @@ class Menu extends Component {
     }
 
     render() {
-        return (
-            <div className = "Menu" id = "outer-container">
-                <Sidebar pageWrapId = {'page-wrap'} outerContainerId={'outer-container'} />
-            </div>
+        return (  
+            <Router>
+                <div className = "Menu" id = "outer-container">
+                    <Sidebar pageWrapId = {'page-wrap'} outerContainerId={'outer-container'} />
+                    <Switch>
+                        <Route path = '/appetizer' component = {Appetizer} />
+                    </Switch> 
+
+                    <Switch>
+                        <Route path = '/breakfast' component = {Breakfast} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/lunch' component = {Lunch} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/dinner' component = {Dinner} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/beverages' component = {Beverages} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/desserts' component = {Desserts} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/snacks' component = {Snacks} />
+                    </Switch>
+
+                    <Switch>
+                        <Route path = '/specials' component = {Specials} />
+                    </Switch>
+                </div>
+            </Router>           
         )
     }
 }
