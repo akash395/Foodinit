@@ -1,12 +1,26 @@
 import React from 'react'
-import  chicken_wings from './../images/chicken-wings.jfif'
 import FoodProfile from './FoodProfile'
+import  chicken_wings from './../images/chicken-wings.jfif'
+import fries from './../images/fries.png'
 
 function Appetizer() {
     return (
         <div>
-            <h2 style = {{marginLeft: '170px'}}>This is Appetizer menu</h2>
-            <FoodProfile imgUrl = {chicken_wings} />
+            <FoodProfile 
+                imgUrl = {chicken_wings} 
+                name = "Chicken Wings"
+                price = "$5.50"
+            />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <FoodProfile 
+                imgUrl = {fries}
+                name = "Fries"
+                price = "$2.75"
+            />
 
         </div>
     )
