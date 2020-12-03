@@ -1,6 +1,7 @@
-from flask import Flask, render_template , request, redirect
+from flask import Flask, render_template , request, redirect, jsonify
 from flask_mysqldb import MySQL
 import yaml
+
 
 app = Flask (__name__)
 app.config ["DEBUG"] = True
@@ -32,6 +33,21 @@ def home():
         cur.close ()
         return redirect('http://localhost:3000')
     return render_template ('index.html')
+
+
+@app.route ('/signin', methods = ["GET", "POST"])
+def signin():
+    if request.method == "POST":
+        userInfo = request.form
+        email = userInfo["email"]
+        password = userInfo["password"]
+
+        cur = mysql.connection.cursor ()
+        resultSet = cur.execute ("SELECT 1 FROM Customer WHERE email_id = %s AND pass = %s", (email, password))
+        
+        if resultSet == 0:
+            return redirect ('http://localhost:3000/signin')  
+        return jsonify("Successfully logged in")
 
 
 if __name__ == '__main__':

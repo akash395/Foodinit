@@ -1,20 +1,26 @@
 import React, { Component } from "react";
 
 export default class Login extends Component {
+    constructor (){
+        super ();
+        this.state = {
+            clickedSubmit: 0,
+        }
+    }
     render() {
         return (
             <div className="Container1">
-            <form>
+            <form action = 'http://localhost:5000/signin' method = 'post'>
                 <h3 className = "H3class">Sign In</h3>
 
                 <div className="form-group">
                     <label>Email address</label> <br></br>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control" placeholder="Enter email" name = "email" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label><br></br>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="form-control" placeholder="Enter password" name = "password" />
                     
                 </div>
                 <br></br>
