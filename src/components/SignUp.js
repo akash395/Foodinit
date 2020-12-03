@@ -1,12 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 function SignUp() {
 
-    // const [initialData, setInitialData] = useState ([{}])
-
-    // useEffect(() => {
-    //     fetch ('/post').then (response => response.json()).then (data => setInitialData(data))
-    // }, [])
     return (
 
         <div className="Container2">

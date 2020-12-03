@@ -2,7 +2,6 @@ import React from 'react'
 import FoodProfile from './FoodProfile'
 
 import  Thai_soup from './../images/Thai_soup.jpg'
-
 import fries from './../images/fries.png'
 import Shrimp_roll from './../images/Shrimp_roll.png'
 import Chicken_Lollipop from './../images/Chicken_Lollipop.jpg'
