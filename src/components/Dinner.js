@@ -1,14 +1,14 @@
 import React from 'react'
 import FoodProfile from './FoodProfile'
-import Beef_steak from './../images/Beef_steak.jpg'
-import Chowmein_noodle from './../images/Chowmein_noodle.jpg'
-import Lamb_chops from './../images/Lamb_chops.jpg'
-import Pad_krapow from './../images/Pad_krapow.jpg'
-import Padma_kua from './../images/Padma_kua.jpg'
-import Salmon_fillet from './../images/Salmon_fillet.jpg'
-import Schezuan_friedrice from './../images/Schezuan_friedrice.jpg'
-import Shrimp_friedrice from './../images/Shrimp_friedrice.jpg'
-import Smoke_salmon from './../images/Smoke_salmon.jpg'
+import Brussels_sprout from './../images/Brussels_sprout.jpg'
+import Caeser_salad from './../images/Caeser_salad.jpg'
+import Calamari from './../images/Calamari.jpg'
+import Cauliflower_steak from './../images/Cauliflower_steak.jpg'
+import Fettuccine_clams from './../images/Fettuccine_clams.jpg'
+import Lobster_soup from './../images/Lobster_soup.jpg'
+import Truffle_gnocchi from './../images/Truffle_gnocchi.jpg'
+import Veal_meatball from './../images/Veal_meatball.png'
+import Yellowfin_tuna from './../images/Yellowfin_tuna.jpg'
 
 function Dinner() {
     return (
@@ -17,25 +17,25 @@ function Dinner() {
             <div className="row">
         <div className=".col-4">
             <FoodProfile 
-                imgUrl = {Beef_steak} 
-                name = "Beef Steak"
-                price = "$28.50"
+                imgUrl = {Brussels_sprout} 
+                name = "Brussels Sprout"
+                price = "$18.50"
             />
             <br />
             <br />
             
             <FoodProfile 
-                imgUrl = {Chowmein_noodle}
-                name = " Chowmein Noodle"
+                imgUrl = {Caeser_salad}
+                name = " Caeser Salad"
                 price = "$19.75"
             />
             <br />
             <br />
             <br />
             <FoodProfile 
-                imgUrl = {Lamb_chops}
-                name = " Lamb Chops"
-                price = "$25.75"
+                imgUrl = {Calamari}
+                name = " Calamari"
+                price = "$19.75"
             />
 
 
@@ -44,24 +44,24 @@ function Dinner() {
             <br></br>
             
         <FoodProfile 
-                imgUrl = {Pad_krapow}
-                name = "Pad Krapow"
-                price = "$29.99"
+                imgUrl = {Cauliflower_steak}
+                name = "Cauliflower Steak"
+                price = "$19.99"
             />
             <br />
             <br />
             <br />
             <FoodProfile 
-                imgUrl = {Padma_kua}
-                name = "Padma Kua"
+                imgUrl = {Fettuccine_clams}
+                name = "Fettuccine Clams"
                 price = "$25.75"
             />
             <br />
             <br />
             <br />
             <FoodProfile 
-                imgUrl = {Salmon_fillet}
-                name = "Salmon_fillet"
+                imgUrl = {Lobster_soup}
+                name = "Lobster Soup"
                 price = "$29.75"
             />
 
@@ -69,24 +69,24 @@ function Dinner() {
         <div className=".col-4">
             <br></br>
         <FoodProfile 
-                imgUrl = {Schezuan_friedrice}
-                name = "Schezuan Fried rice"
+                imgUrl = {Truffle_gnocchi}
+                name = "Truffle Gnocchi"
                 price = "$19.75"
             />
             <br />
             <br />
             <br />
             <FoodProfile 
-                imgUrl = {Shrimp_friedrice}
-                name = " Shrimp Fried rice"
+                imgUrl = {Veal_meatball}
+                name = " Veal Meatball"
                 price = "$19.75"
             />
             <br />
             <br />
             <br />
             <FoodProfile 
-                imgUrl = {Smoke_salmon}
-                name = "Smoke Salmon"
+                imgUrl = {Yellowfin_tuna}
+                name = "Yellowfin Tuna"
                 price = "$20.75"
             />
 
