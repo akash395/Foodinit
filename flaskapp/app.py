@@ -28,7 +28,7 @@ def home():
         password = userInfo['password']
 
         cur = mysql.connection.cursor ()
-        cur.execute ("INSERT INTO user (first_name, last_name, email, password) VALUES (%s, %s, %s, %s)", (first_name, last_name, email, password))
+        cur.execute ("INSERT INTO Customer (customer_id,first_name, last_name,phone,funds,total_spendings, email_id, pass) VALUES (%s,%s, %s, %s, %s, %s, %s, %s)", ('10',first_name, last_name,'4325923459','59','70', email, password))
         mysql.connection.commit ()
         cur.close ()
         return redirect('http://localhost:3000')
