@@ -5,7 +5,7 @@ function SignUp() {
     return (
 
         <div className="Container2">
-            <form action = 'http://localhost:5000/post' method = 'post'>
+            <form action = 'http://localhost:5000/signup' method = 'post'>
                 <h3 className="H3class">Sign Up</h3>
 
                 <div className="form-group">
