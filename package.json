@@ -8,6 +8,9 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.3.0",
     "antd": "^4.9.1",
+    "email": "^0.2.6",
+    "email-validator": "^2.0.4",
+    "formik": "^2.2.5",
     "react": "^17.0.1",
     "react-burger-menu": "^2.9.2",
     "react-dom": "^17.0.1",
@@ -16,7 +19,9 @@
     "react-scripts": "4.0.1",
     "react-star-ratings": "^2.3.0",
     "url-loader": "^4.1.1",
-    "web-vitals": "^0.2.4"
+    "validator": "^13.5.1",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.32.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +48,5 @@
       "last 1 safari version"
     ]
   },
-
-  "proxy": "http://localhost:5000" 
+  "proxy": "http://localhost:5000"
 }
