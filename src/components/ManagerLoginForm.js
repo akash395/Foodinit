@@ -1,11 +1,14 @@
-import React from 'react'
+import React , {useState, useEffect } from 'react'
 import { Formik } from "formik";
 import * as EmailValidator from "email-validator"; // used when validating with a self-implemented approach
 import * as Yup from "yup"; // used when validating with a pre-built solution
 import './../ValidatedLoginForm.css'
+import {login} from './login'
+
 
 
 const ManagerLoginForm = () => (
+
     <Formik className = "mnform"
         initialValues={{ email: "", password: "" }}
         onSubmit={(values, { setSubmitting }) => {
@@ -45,7 +48,7 @@ const ManagerLoginForm = () => (
               .matches(/(?=.*[0-9])/, "Password must contain a number.")
           })}
     >
-        
+         
         {props => {
             const {
                 values,
@@ -56,9 +59,10 @@ const ManagerLoginForm = () => (
                 handleBlur,
                 handleSubmit
             } = props;
+            
 
             return (
-                <form action = "http://localhost:5000/admin" method = "post">
+                <form action = "http://localhost:5000/admin" method = "post" type = "submit" >
                     <label htmlFor="email">Email</label>
                     <input
                         id="email"
@@ -66,7 +70,7 @@ const ManagerLoginForm = () => (
                         type="text"
                         placeholder="Enter your email"
                         value = {values.email}
-                        onChange={handleChange}
+                        onChange={ handleChange }
                         onBlur={handleBlur}
                         className={errors.email && touched.email && "error"}
                     />
@@ -82,7 +86,7 @@ const ManagerLoginForm = () => (
                         type="password"
                         placeholder="Enter your password"
                         value={values.password}
-                        onChange={handleChange}
+                        onChange={ handleChange }
                         onBlur={handleBlur}
                         className={errors.password && touched.password && "error"}
                     />
@@ -92,12 +96,14 @@ const ManagerLoginForm = () => (
                     )}
                     
                     <br></br>
-                    <button type="submit" >
+                    <button type="submit" onClick = {() => login}>
                         Login
                     </button>
+
                 </form>
             );
         }}
     </Formik>
+
 );
 export default ManagerLoginForm;

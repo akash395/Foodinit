@@ -8,11 +8,13 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.3.0",
     "antd": "^4.9.1",
+    "axios": "^0.21.0",
     "email": "^0.2.6",
     "email-validator": "^2.0.4",
     "formik": "^2.2.5",
     "react": "^17.0.1",
     "react-burger-menu": "^2.9.2",
+    "react-cookie": "^4.0.3",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
@@ -25,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-flask": "cd api && flask run",
+    "start-flask": "cd flaskapp && cd foodinit-venv && Scripts/activate && cd .. && app.py",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

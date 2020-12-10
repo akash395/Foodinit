@@ -15,6 +15,7 @@ import Specials from './Specials'
 class Menu extends Component {
     constructor (){
         super ();
+        
     }
 
     render() {
@@ -46,6 +47,7 @@ class Menu extends Component {
                         <Route path = '/specials' component = {Specials} />
                     </Switch>
                 </div>
+                
             </Router>           
         )
     }

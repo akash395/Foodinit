@@ -1,10 +1,14 @@
-from flask import Flask, render_template , request, redirect, jsonify
+from flask import Flask, render_template , request, redirect, jsonify, make_response
 from flask_mysqldb import MySQL
+from functools import wraps
 import yaml
+import jwt
+import datetime
 
 
 app = Flask (__name__)
 app.config ["DEBUG"] = True
+app.config ['SECRET_KEY'] = 'ThisIsSecretKey'
 
 # Configure DB
 with open (r'db.yaml') as file:
@@ -57,20 +61,52 @@ def signIn():
             return redirect ('http://localhost:3000/signin')  
         return jsonify("Successfully logged in")
 
+
+
+
+
+
+
+
+
+def token_requred (f):
+    @wraps(f)
+    def decorated (*args, **kwargs):
+        token = request.args.get ('token') # it will be something like http://localhost:5000/rouute?token=sdkjfvhbksdfhIUYHRASDKFCBD
+
+        if not token :
+            return jsonify ({'Message': "Token is missing"}), 403
+        try:
+            data = jwt.decode (token, app.config ['SECRET_KEY'])
+        except:
+            return jsonify ({'Message': "Token is invalid"}), 403
+
+        return f(*args, **kwargs)
+    return decorated
+
+
 # this is for manager to login
 @app.route ('/admin', methods = ["POST", "GET"])
 def admin():
+    
     if request.method == "POST":
-        adminInfo = request.form
-        email = adminInfo["email"]
-        password = adminInfo["password"]
+        email = request.form.get ("email")
+        password = request.form.get ("password")
 
         cur = mysql.connection.cursor()
         resultSet = cur.execute ("SELECT 1 FROM Manager WHERE manager_email = %s AND manager_password = %s", (email, password))
 
-        if resultSet == 0:
-            return redirect ('http://localhost:3000/admin')
-        return redirect('http://localhost:3000/records')
+        # if resultSet == 0:          # no match found with the given email and password
+        #     return redirect ('http://localhost:3000/admin')
+        # else:                       # match found so now get a valid token
+        token = jwt.encode ({'user': email, 'exp': datetime.datetime.utcnow() + datetime.timedelta (seconds = 120)}, app.config ['SECRET_KEY'])
+        return jsonify ({'token': token.decode ('UTF-8')})
+    return make_response ('Could not verify!', 401, {'WWW-Authenticate': 'Basic realm = "Login Required"'})
+        
+
+
+
+
 
 
 @app.route ('/getemployeerecords', methods = ["GET"])
@@ -88,6 +124,58 @@ def getEmployeeRecords ():
     return jsonify (allEmployeeRecords)
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------
+# SOME PRACTICE THINGS DON"T WORRY ABOUT IT
+
+def token_requred (f):
+    @wraps(f)
+    def decorated (*args, **kwargs):
+        token = request.args.get ('token') # it will be something like http://localhost:5000/rouute?token=sdkjfvhbksdfhIUYHRASDKFCBD
+
+        if not token :
+            return jsonify ({'Message': "Token is missing"}), 403
+        try:
+            data = jwt.decode (token, app.config ['SECRET_KEY'])
+        except:
+            return jsonify ({'Message': "Token is invalid"}), 403
+
+        return f(*args, **kwargs)
+    return decorated
+
+@app.route ('/unprotected')
+def unprotected ():
+    return jsonify ('Anyone can view this')
+
+@app.route ('/protected')
+@token_requred
+def protected ():
+    return jsonify ('This is sensitive information, only authorized person can view this')
+
+
+
+@app.route ('/login')
+def login ():
+    auth = request.authorization
+
+    if auth and auth.password == 'password':
+        token = jwt.encode ({'user': auth.username, 'exp': datetime.datetime.utcnow() + datetime.timedelta (seconds = 60)}, app.config ['SECRET_KEY'])
+        return jsonify ({'token': token.decode ('UTF-8')})
+    return make_response ('Could not verify!', 401, {'WWW-Authenticate': 'Basic realm = "Login Required"'})
 
 
 if __name__ == '__main__':
