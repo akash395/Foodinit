@@ -33,7 +33,9 @@ export default class Login extends Component {
 
                 <button type="submit" className="SubmitBtn">Submit</button>
                 <p className="forgot-password"><br></br>
-                     <a href="#" >Forgot password?</a>
+                     <a href="#" >Forgot password?</a></p>
+                <p className="is-Manager"><br></br>
+                <a href="http://localhost:3000/admin">Are you a Manager?</a>
                 </p>
             </form>
             </div>

@@ -236,3 +236,22 @@ h1.large{
   margin-left:180px;
 }
 .col-4{width: 33.33%;}
+
+th.EmployeeRecords{
+text-align: center;
+border: 1px solid black;
+box-sizing: border-box;
+padding: 10px;
+}
+table.uppertable{
+  text-align: center;
+  padding: 10px;
+}
+
+.is-Manager{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia;
+ 
+}
+.col-9{width: 75%;}

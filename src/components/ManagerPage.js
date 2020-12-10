@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import ManagerLoginForm from './ManagerLoginForm'
-
+import "./../App.css"
 
 export class ManagerPage extends Component {
     constructor (){
         super ();
         this.state = {
-            employees : []
-            
+            employees : [],
+            isChecked: false
         }
     }
+
     template (args){
         return (
             <p>args</p>
@@ -26,38 +27,49 @@ export class ManagerPage extends Component {
         }))
     }
 
-
+    
     render() { 
-        const tableStyle = {
+    const tableStyle = {
             border: '1px solid black'
         }
         return (
-            <div>
+            <div className="row">
+                <div className=".col-9">
                 <h2 style = {{color: 'blue'}}>View Employee records</h2>
-                <table style = {tableStyle}>
+                <table style = {{width:"100%"}} className="uppertable">
                     <tr style = {{color : 'teal'}}>
-                        <th style = {tableStyle}>Employee_id</th>
-                        <th style = {tableStyle}>First Name</th>  
-                        <th style = {tableStyle}>Last Name</th> 
-                        <th style = {tableStyle}>Position</th> 
-                        <th style = {tableStyle}>Salary</th>
+                        <th style = {{width:"100%"}}>Employee_id</th>
+                        <th style = {{width:"100%"}}>First Name</th>  
+                        <th style = {{width:"100%"}}>Last Name</th> 
+                        <th style = {{width:"100%"}}>Position</th> 
+                        <th style = {{width:"100%"}}>Salary</th>
                     </tr>
                 </table>
+
                 <p>{this.state.employees.map (record => (
-                    <table style = {tableStyle}>
+
+                    <table style ={{width:"50%"}} >
                         
                         <tr>
-                            <td style = {tableStyle}>{record[0]}</td>
-                            <td style = {tableStyle}>{record[1]}</td>
-                            <td style = {tableStyle}>{record[2]}</td>
-                            <td style = {tableStyle}>{record[3]}</td>
-                            <td style = {tableStyle}>{record[4]}</td>
+
+                            <th className="EmployeeRecords">
+                                <td style = {{width:"15%"}}>{record[0]}</td>
+                                <td style = {{width:"25%"}}>{record[1]}</td>
+                                <td style = {{width:"15%"}}>{record[2]}</td>
+                                <td style = {{width:"20%"}}>{record[3]}</td>
+                                <td style = {{width:"5%"}} >{record[4]}</td>
+                            {/* <p>{record[0]} {record[1]} {record[2]} {record[3]} {record[4]}</p> */}
+                            </th>
+                     
                         </tr>
 
                     </table>
-                ))}</p>
-
-                
+                ))}
+                </p>
+                </div>
+                <div className=".col-3">
+ 
+                </div>
             </div>
         )
     }

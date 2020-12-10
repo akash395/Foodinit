@@ -28,11 +28,11 @@ function NavBar() {
                 <Link to = '/signin'>
                     <li className="topnav-right"><a href="#Sign In">Sign In</a></li>
                 </Link>
-
+{/* 
                 <Link to = '/admin'>
                     <li className="topnav-right"><a href="/admin">Admin</a></li>
                 </Link>
-                
+                 */}
                 <Link to = "&#9776;">
                      <li class="dropdownIcon"><a href="javascript:void(0);"  onclick="dropdownMenu()" >&#9776;</a></li>
                 </Link>  

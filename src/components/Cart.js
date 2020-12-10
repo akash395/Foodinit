@@ -7,10 +7,13 @@ export class Cart extends Component {
             bag: 0
         }
     }
+
     render() {
         return (
             <div>
-                <h4>This is to add items to cart</h4>
+                <h3>This is to add items to cart</h3>
+
+                
             </div>
         )
     }
