@@ -15,7 +15,7 @@
   cursor: pointer;
   text-decoration: none;
 }
-.container {
+.Container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

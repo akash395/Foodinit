@@ -73,7 +73,7 @@ class Menu extends Component {
                 </center>
                 </div>
 
-                <div class = "container">
+                <div class = "Container">
                     <div class = "image">
                             <img src = {Salmon_fillet} alt="thsirt1" ></img>
                             <h3>Salmon Fillet</h3>
