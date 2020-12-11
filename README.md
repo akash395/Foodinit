@@ -20,6 +20,7 @@
 ![App](https://github.com/myumbla3/OnlineRestaurant/blob/main/app.png)
 
 11. Then in another terminal, type:npm start, which will open up a browser in localhost for you to access the websites
+![npm](https://github.com/myumbla3/OnlineRestaurant/blob/main/npm.png)
 
 ### Home Page
 ![Home](https://github.com/myumbla3/OnlineRestaurant/blob/main/home.png)
@@ -42,3 +43,6 @@
   to differentiate a registered customer and guest surfer. We also didn't have enough time to differentiate a vip customer and register customer. Vip would've had a 
   specialized menu catered to their prefences, and registered customer would've been redirected to the top picks in the menu. We also tried to use escape_string from
   MySQLdb in order to redirect the VIP and Registered customers to different pages based on their deposit funds.
+  
+- Now we realize that we should've focused more of our time on the back end first, then add a front end onwards. The back end is more important to work on since that is where
+  all the information is stored
