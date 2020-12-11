@@ -23,6 +23,9 @@
 ### Home Page
 ![Home](https://github.com/myumbla3/OnlineRestaurant/blob/main/home.png)
 
+- This is the home page for the website where a video displays food and there is a navigation bar at the top of the website where you can navigate to
+  the various parts of the website, including the menu, signing in, contacting us, etc.
+
 ### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/Menu.png)
 
