@@ -35,13 +35,13 @@
   On the left hand side of the page, there are three lines in which you can click and it will display the various options of food provided, whether it be
   Breakfast, Lunch, Dinner, Specials, etc.
   
-  -Breakfast
+  - Breakfast
    ![Breakfast](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Breakfast.png)
    
-  -Lunch
+  - Lunch
    ![Lunch](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/lunch.png)
    
-  -Dinner
+  - Dinner
    ![Dinner](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Dinner.png)
 
 ### Sign In Page
