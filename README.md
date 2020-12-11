@@ -16,8 +16,7 @@
 8. pip install -r requirements.txt (found in src->flaskapp folder)
 9. For Foodinit.sql, this file is used for MYSQL Workbench, which you also need to install for the database
    to work. Set accounts have been created to allow the user to sign in successfully
-10. once all dependencies are installed type
- - python app.py
+10. once all dependencies are installed type python app.py
  ![App](https://github.com/myumbla3/OnlineRestaurant/blob/main/app.png)
 
 11. Then in another terminal, type:npm start, which will open up a browser in localhost for you to access the websites
