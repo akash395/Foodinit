@@ -38,5 +38,5 @@
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/SignIn.png)
 
 - There are problems within the sql file itself. If you type in any of the Customer Values in the Sign In Page,
-  it will successfully allow you to sign in to the website itself. However, there is no yet current implementation
-  to differentiate between a registered customer and guest surfer.
+  it will successfully allow you to sign in to the website itself. However, wwe didn't have enough time 
+  to differentiate a registered customer and guest surfer.
