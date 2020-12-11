@@ -26,5 +26,5 @@ Also Used: Flask, MySQL
 ### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/Menu.png)
 
-###Sign In Page
+### Sign In Page
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/SignIn.png)
