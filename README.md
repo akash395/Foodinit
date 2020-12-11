@@ -10,5 +10,6 @@ To run the online restaurant project:
 8. pip install -r requirements.txt (found in src->flaskapp folder)
 9. once all dependencies are installed type on another terminal
   -> python app.py
-10. Then in the first terminal, type: npm start
+10. Then in the first terminal, type: 
+npm start
     then a webpage should open up on your browser.
