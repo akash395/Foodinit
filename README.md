@@ -20,8 +20,11 @@ Also Used: Flask, MySQL
   -> python app.py
 11. Then in another terminal, type:npm start, which will open up a browser in localhost for you to access the websites
 
+### Home Page
 ![Home](https://github.com/myumbla3/OnlineRestaurant/blob/main/home.png)
 
+### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/Menu.png)
 
+###Sign In Page
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/SignIn.png)
