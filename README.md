@@ -73,4 +73,5 @@
   MySQLdb in order to redirect the VIP and Registered customers to different pages based on their deposit funds.
   
 - Now we realize that we should've focused more of our time on the back end first, then add a front end onwards. The back end is more important to work on since that is where
-  all the information is stored
+  all the information is stored. Since this is a first for all of us, so all of us were lost on how to start. Once we did start, we encountered various problems with our machines. A lot of precious time were spent on debugging the problem on how to get things up and running before actually coding. As mentioned previously we spent a ot of time with tutorials learning new things and information on how to do these kind of project rather than starting our own version of it. 
+Through this proejct we learned our strengths and weakness and what areas we need to improve. We got valuable experience on how to tackle this type of project and situations in the real world job. We all learned from our mistakes and hopefully we can avoid this kind of behavior in the job field.
