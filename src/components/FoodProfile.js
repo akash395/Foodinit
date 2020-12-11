@@ -1,16 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Ratings from './Ratings'
 
 function FoodProfile(props) {
     const imgStyle = {
         position:'relative',
         left: '170px'
-        // up:'20px'
+
     }
-    // const btnStyle = {
-    //     position: 'sticky',
-    //     left: '170px'
-    // }
+    const [bag, setBag] = useState ([])
+
+
     return (
         <div>
             <img 
@@ -21,10 +20,10 @@ function FoodProfile(props) {
             <table>
                 <tr>
                     <th><div className="ratting"> <Ratings/></div></th>
-                   <th><button className="AddtocartBtn" >Add to cart</button></th>
-            </tr>
-            
+                    <th><button className="AddtocartBtn">Add to cart</button></th>
+                </tr>           
             </table>
+            
         </div>
     )
 }

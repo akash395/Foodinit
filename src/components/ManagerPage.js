@@ -17,6 +17,7 @@ export class ManagerPage extends Component {
             <p>args</p>
         )
     }
+
     componentDidMount(){
         const apiUrl = "/getemployeerecords";
         let record = this.state.employees;
