@@ -1,8 +1,8 @@
 # To run the online restaurant project: CSC322 Software Engineering
 
 ### Extra Details
-Languages Used: Python, CSS, Javascript, HTML
-Also Used: Flask, MySQL
+- Languages Used: Python, CSS, Javascript, HTML
+- Also Used: Flask, MySQL
 
 ### Instructions
 
