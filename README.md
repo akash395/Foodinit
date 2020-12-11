@@ -54,6 +54,12 @@
 
 - If you don't implement anything within the text boxes, then there wil be a red ring around the text boxes and text indicating that
   you did not meet the requirements to log in.
+  
+#### Token Acceptance
+![Token](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/token.png)
+
+- This token indicates that when you sign in through admin, then you successfully signed in. The manager is now within the database. We tried to fix the token, but
+  it didn't work properly and just displayed the token as one string of text.
 
 ### Sign In Page
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/SignIn.png)
