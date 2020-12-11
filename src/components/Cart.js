@@ -19,9 +19,10 @@ export class Cart extends Component {
     render() {
         return (
             <div>
+            <center>
                 <h4>This is to add items to cart</h4>
                 <h4>Items: {this.state.bag}</h4>
-                
+                </center>
             </div>
         )
     }
