@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Shrimp_tempura from './../images/Shrimp_tempura.jpg'
 import Caeser_salad from './../images/Caeser_salad.jpg'
+import ONLINE_FOOD from './../images/ONLINE_FOOD.jpg'
 
 function About() {
     return (
@@ -18,11 +19,13 @@ function About() {
             <img src = {Caeser_salad}></img>
             </center>
             <br/>
-            <br/>
-            <h2 className="H2class">Business Hours:</h2>
-            <h3>Mon - Fri:	7:00 AM - 11:00 PM <br/>
-                Sat & Sun:	6:00 AM - 11:00 PM <br/>
-            </h3>
+            <div className = "container" id = "section-2-gradient">
+
+             <h2 className="large">Business Hours:</h2>
+                <h3>Mon - Fri:	7:00 AM - 11:00 PM <br/>
+                    Sat & Sun:	6:00 AM - 11:00 PM <br/>
+                </h3>
+            </div>
         </div>
     )
 }
