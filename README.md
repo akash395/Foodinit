@@ -39,4 +39,6 @@
 
 - There are problems within the sql file itself. If you type in any of the Customer Values in the Sign In Page,
   it will successfully allow you to sign in to the website itself. However, wwe didn't have enough time 
-  to differentiate a registered customer and guest surfer. We also didn't have enough time to differentiate a vip customer and register customer.
+  to differentiate a registered customer and guest surfer. We also didn't have enough time to differentiate a vip customer and register customer. Vip would've had a 
+  specialized menu catered to their prefences, and registered customer would've been redirected to the top picks in the menu. We also tried to use escape_string from
+  MySQLdb in order to redirect the VIP and Registered customers to different pages based on their deposit funds.
