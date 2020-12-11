@@ -36,7 +36,7 @@ make sure you are starting in restaurant and then type in the following lines
 ### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Menu.png)
 
-- The top picks food are displayed at the front of the Menu, and there is the feature to add any of the to the cart, but that feature isn't working right now.
+- The top picks food are displayed at the front of the Menu, and there is the feature to add any of the items to the cart, you can view the 'Add Cart' once you hover over the item but that feature to add it isn't working right now.
   On the left hand side of the page, there are three lines in which you can click and it will display the various options of food provided, whether it be
   Breakfast, Lunch, Dinner, Specials, etc.
   
