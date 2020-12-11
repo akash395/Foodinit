@@ -63,7 +63,8 @@ def signIn():
 
         if resultSet == 0:
             return redirect('http://localhost:3000/signin')
-        return jsonify("Successfully logged in")
+        return redirect('http://localhost:3000/menu')
+        # return jsonify("Successfully logged in")
 
 
 def token_requred(f):
