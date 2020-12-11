@@ -20,7 +20,7 @@ export class Cart extends Component {
         return (
             <div>
             <center>
-                <h4>This is to add items to cart</h4>
+                <h2>Cart is currently empty</h2>
                 <h4>Items: {this.state.bag}</h4>
                 </center>
             </div>
