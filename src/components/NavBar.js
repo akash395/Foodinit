@@ -20,7 +20,7 @@ function NavBar() {
                 </Link>
                
                 <Link to = "/cart">
-                    <li className="topnav-right"><a href="/cart">Cart</a></li>
+                    <li className="topnav-right"><a href="http://localhost:3000/cart">Cart <span>0</span></a></li>
                 </Link>
                 <Link to = "/signup">
                     <li className="topnav-right"><a href="#Sign Up">Sign Up</a></li>

@@ -33,7 +33,7 @@
 .add-cart {
   position: absolute;
   width: 100%;
-  background-color: darkgrey;
+  background-color: #25f0f7;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   cursor: pointer;

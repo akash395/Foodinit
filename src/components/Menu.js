@@ -25,7 +25,9 @@ class Menu extends Component {
     constructor (){
         super ();
         
+        <body><script src ="Cart.js"></script></body>
     }
+
 
     render() {
 
@@ -88,7 +90,7 @@ class Menu extends Component {
                     <div class = "image">
                             <img src = {Thai_soup} alt="thsirt1" ></img>
                             <h3>Thai Soup</h3>
-                            <h3>$29.75</h3>
+                            <h3>$7.50</h3>
                             <a class= "add-cart cart3" href ="#">Add Cart</a>
                     </div>
                 
@@ -100,6 +102,7 @@ class Menu extends Component {
                     </div>
 
                 </div>
+                
             </Router> 
                 
 
