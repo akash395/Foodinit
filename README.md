@@ -26,6 +26,10 @@
 ### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/Menu.png)
 
+- The top picks food food are displayed at the front of the Menu, and there is the feature to add any of the to the cart, but that feature isn't working right now.
+  On the left hand side of the page, there are three lines in which you can click and it will display the various options of food provided, whether it be
+  Breakfast, Lunch, Dinner, Specials, etc.
+
 ### Sign In Page
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/SignIn.png)
 
