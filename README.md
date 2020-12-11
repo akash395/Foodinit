@@ -16,16 +16,11 @@
 8. pip install -r requirements.txt (found in src->flaskapp folder)
 9. For Foodinit.sql, this file is used for MYSQL Workbench, which you also need to install for the database
    to work. Set accounts have been created to allow the user to sign in successfully
-10. once all dependencies are installed for WINDOWS type python app.py
+10. once all dependencies are installed type python app.py
 ![App](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/app.png)
 
 11. Then in another terminal, type:npm start, which will open up a browser in localhost for you to access the websites
 ![npm](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/npm.png)
-
-12. If you're using mac just follow these steps:
-make sure you are starting in restaurant and then type in the following lines
-<img width="187" alt="Screen Shot 2020-12-11 at 4 07 11 PM" src="https://user-images.githubusercontent.com/38135805/101957531-9fc9be80-3bcf-11eb-8c2e-db66cc86a684.png">
-
 
 ### Home Page
 ![Home](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/home.png)
@@ -36,7 +31,7 @@ make sure you are starting in restaurant and then type in the following lines
 ### Menu Page
 ![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Menu.png)
 
-- The top picks food are displayed at the front of the Menu, and there is the feature to add any of the items to the cart, you can view the 'Add Cart' once you hover over the item but that feature to add it isn't working right now.
+- The top picks food are displayed at the front of the Menu, and there is the feature to add any of the to the cart, but that feature isn't working right now.
   On the left hand side of the page, there are three lines in which you can click and it will display the various options of food provided, whether it be
   Breakfast, Lunch, Dinner, Specials, etc.
   
@@ -48,6 +43,17 @@ make sure you are starting in restaurant and then type in the following lines
    
   - Dinner
    ![Dinner](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Dinner.png)
+   
+### Admin Page
+![Admin](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/admin.png)
+
+- This is the Admin page where the Managers will sign in instead of the usual sign in method.
+
+#### Requirements
+![Req](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/AdminReq.png)
+
+- If you don't implement anything within the text boxes, then there wil be a red ring around the text boxes and text indicating that
+  you did not meet the requirements to log in.
 
 ### Sign In Page
 ![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/SignIn.png)
