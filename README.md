@@ -67,11 +67,11 @@
 ![SignError](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/signerror.png)
 
 - There are problems within the sql file itself. If you type in any of the Customer Values in the Sign In Page,
-  it will successfully allow you to sign in to the website itself. However, wwe didn't have enough time 
-  to differentiate a registered customer and guest surfer. We also didn't have enough time to differentiate a vip customer and register customer. Vip would've had a 
-  specialized menu catered to their prefences, and registered customer would've been redirected to the top picks in the menu. We also tried to use escape_string from
+  it will allow you to successfully sign in to the website itself. However, we lacked enough back end skills
+  to differentiate a registered customer, vip customer and guest surfer. Vip customers would've had a 
+  specialized menu catered to their preferences, and registered customers would've been redirected to the top picks in the menu. We also tried to use escape_string from
   MySQLdb in order to redirect the VIP and Registered customers to different pages based on their deposit funds.
   
-- Now we realize that we should've focused more of our time on the back end first, then add a front end onwards. The back end is more important to work on since that is where
-  all the information is stored. Since this is a first for all of us, so all of us were lost on how to start. Once we did start, we encountered various problems with our machines. A lot of precious time were spent on debugging the problem on how to get things up and running before actually coding. As mentioned previously we spent a ot of time with tutorials learning new things and information on how to do these kind of project rather than starting our own version of it. 
-Through this proejct we learned our strengths and weakness and what areas we need to improve. We got valuable experience on how to tackle this type of project and situations in the real world job. We all learned from our mistakes and hopefully we can avoid this kind of behavior in the job field.
+- Unfortunately, we realize that we should've focused more of our time on the back end first, and add a front end onwards. The back end is more important to work on since that is where
+  all the information is stored. Since this is a first for all of us, we were lost on how to start. Once we did start, we encountered various problems with our machines. A lot of precious time were spent on debugging the problem on how to get things up and running before actually coding. As mentioned previously we spent a lot of time with tutorials learning new things and information on how to do this kind of project rather than starting our own version of it. 
+Through this proejct we learned our strengths and weaknesses and what areas we need to improve on. We got valuable experience on how to tackle this type of project and situation in the real world job. We all learned from our mistakes and hopefully we can avoid this kind of behavior in the job field.
