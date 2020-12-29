@@ -1,71 +1,77 @@
-# Getting Started with Create React App
+# To run the online restaurant project: CSC322 Software Engineering
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Extra Details
+- Languages Used: Python, CSS, Javascript, HTML
+- Also Used: Flask, MySQL
 
-## Available Scripts
+### Instructions
 
-In the project directory, you can run:
+1. Install Node.js from https://nodejs.org/en/
+2. Install Git from https://git-scm.com/
+3. Open a terminal, and go to desired directory.
+4. git clone https://github.com/myumbla3/OnlineRestaurant.git
+5. npm install (for installing dependencies for frontend)
+6. make a virtual environment to download all python dependencies
+7. activate that environment
+8. pip install -r requirements.txt (found in src->flaskapp folder)
+9. For Foodinit.sql, this file is used for MYSQL Workbench, which you also need to install for the database
+   to work. Set accounts have been created to allow the user to sign in successfully
+10. once all dependencies are installed type python app.py
+![App](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/app.png)
 
-### `npm start`
+11. Then in another terminal, type:npm start, which will open up a browser in localhost for you to access the websites
+![npm](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/npm.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Home Page
+![Home](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/home.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- This is the home page for the website where a video displays food and there is a navigation bar at the top of the website where you can navigate to
+  the various parts of the website, including the menu, signing in, contacting us, etc.
 
-### `npm test`
+### Menu Page
+![Menu](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Menu.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The top picks food are displayed at the front of the Menu, and there is the feature to add any of the to the cart, but that feature isn't working right now.
+  On the left hand side of the page, there is a trigram in which you can click and it will display the various options of food provided, whether it be
+  Breakfast, Lunch, Dinner, Specials, etc.
+  
+  - Breakfast
+   ![Breakfast](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Breakfast.png)
+   
+  - Lunch
+   ![Lunch](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/lunch.png)
+   
+  - Dinner
+   ![Dinner](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/Dinner.png)
+   
+### Admin Page
+![Admin](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/admin.png)
 
-### `npm run build`
+- This is the Admin page where the Managers will sign in instead of the usual sign in method.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Requirements
+![Req](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/AdminReq.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- If you don't implement anything within the text boxes, then there wil be a red ring around the text boxes and text indicating that
+  you did not meet the requirements to log in.
+  
+#### Token Acceptance
+![Token](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/token.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This token indicates that when you sign in through admin, then you successfully signed in. The manager is now within the database. We tried to fix the token, but
+  it didn't work properly and just displayed the token as one string of text.
 
-### `npm run eject`
+### Sign In Page
+![SignIn](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/SignIn.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![SignError](https://github.com/myumbla3/OnlineRestaurant/blob/main/RImages/signerror.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 6cbfc746319dee9b9fb61e27323b7a4bd10ae436
+- There are problems within the sql file itself. If you type in any of the Customer Values in the Sign In Page,
+  it will allow you to successfully sign in to the website itself. However, we lacked enough back end skills
+  to differentiate a registered customer, vip customer and guest surfer. Vip customers would've had a 
+  specialized menu catered to their preferences, and registered customers would've been redirected to the top picks in the menu. We also tried to use escape_string from
+  MySQLdb in order to redirect the VIP and Registered customers to different pages based on their deposit funds.
+  
+- Unfortunately, we realize that we should've focused more of our time on the back end first, and add a front end onwards. The back end is more important to work on since that is where
+  all the information is stored. Since this is a first for all of us, we were lost on how to start. Once we did start, we encountered various problems with our machines. A lot of precious time were spent on debugging the problem on how to get things up and running before actually coding. As mentioned previously we spent a lot of time with tutorials learning new things and information on how to do this kind of project rather than starting our own version of it. 
+Through this proejct we learned our strengths and weaknesses and what areas we need to improve on. We got valuable experience on how to tackle this type of project and situation in the real world job. We all learned from our mistakes and hopefully we can avoid this kind of behavior in the job field.
